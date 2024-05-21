@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: GPL-2.0
+# Copyright (c) 2024 Collabora Ltd
+- type: usb-controller
+  dt-mmio: 112a0000
+  usb-version: 2
+  devices:
+    - path: 1
+      interfaces: [0, 1]
+      name: camera
+- type: usb-controller
+  dt-mmio: 112b0000
+  usb-version: 2
+  devices:
+    - path: 1
+      interfaces: [0, 1]
+      name: bluetooth
+- type: pci-controller
+  dt-mmio: 112f8000
+  devices:
+    - path: 0.0/0.0
+      name: wifi
