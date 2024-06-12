@@ -1,14 +1,14 @@
 # SPDX-License-Identifier: GPL-2.0
 # Copyright (c) 2024 Collabora Ltd
 - type: usb-controller
-  dt-mmio: 112a0000
+  of-fullname-regex: .*112a1000.*
   usb-version: 2
   devices:
     - path: 1
       interfaces: [0, 1]
       name: camera
 - type: usb-controller
-  dt-mmio: 112b0000
+  of-fullname-regex: .*112b1000.*
   usb-version: 2
   devices:
     - path: 1
